@@ -1,10 +1,11 @@
 {
   "name": "bfs-path",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "An emulation of Node's path module. Used in BrowserFS.",
-  "main": "index.js",
+  "main": "js/path.js",
+  "typings": "js/path",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "node prepublish.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,9 @@
   "peerDependencies": {
     "browserfs": "~0.4"
   },
-  "homepage": "https://github.com/jvilk/bfs-path#readme"
+  "homepage": "https://github.com/jvilk/bfs-path#readme",
+  "devDependencies": {
+    "tsd": "^0.6.5",
+    "typescript": "^1.6.2"
+  }
 }

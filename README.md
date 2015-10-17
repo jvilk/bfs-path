@@ -1,7 +1,22 @@
-# BrowserFS Path
+# BrowserFS Path 0.1.0
+> An emulation of NodeJS's `path` module. Used in [BrowserFS](https://github.com/jvilk/BrowserFS).
 
-An emulation of NodeJS's Path module. Used in [BrowserFS](https://github.com/jvilk/BrowserFS).
+## Features
 
-Currently, this repository is a simple wrapper around functionality provided in the monolithic BrowserFS library.
+* Compatible with NodeJS's `path` module.
+  * Passes all of Node's `path` unit tests! See [BrowserFS](https://github.com/jvilk/BrowserFS)'s repository for tests.
+* Supports resolving paths relative to `.`!
+  * In conjunction with [bfs-process](https://github.com/jvilk/bfs-process) and [BrowserFS](https://github.com/jvilk/bfs-process).
 
-In the future, the actual source code of BrowserFS's Path implementation will be moved here.
+## Using with Browserify
+
+You can use `bfs-path` in Browserify! Here's the relevant configuration snippet:
+
+```{js}
+{
+    insertGlobalVars:
+    {
+        "process": function () { return "require('bfs-process')" }
+    }
+}
+```
