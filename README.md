@@ -14,9 +14,9 @@ You can use `bfs-path` in Browserify! Here's the relevant configuration snippet:
 
 ```{js}
 {
-    insertGlobalVars:
+    builtins:
     {
-        "process": function () { return "require('bfs-process')" }
+        "path": require.resolve("bfs-path")
     }
 }
 ```
