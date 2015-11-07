@@ -1,6 +1,6 @@
 {
   "name": "bfs-path",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An emulation of Node's path module. Used in BrowserFS.",
   "main": "js/path.js",
   "typings": "js/path",
