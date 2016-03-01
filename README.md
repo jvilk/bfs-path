@@ -1,4 +1,4 @@
-# BrowserFS Path 0.1.1
+# BrowserFS Path 0.1.2
 > An emulation of NodeJS's `path` module. Used in [BrowserFS](https://github.com/jvilk/BrowserFS).
 
 ## Features
