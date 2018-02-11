@@ -1,13 +1,13 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
-        "target": "es3",
+        "module": "es2015",
+        "target": "es2015",
         "moduleResolution": "node",
         "declaration": true,
         "inlineSources": true,
         "sourceMap": true,
         "noImplicitAny": true,
-        "outDir": "js/cjs"
+        "outDir": "js/es6"
     },
     "exclude": [
         "node_modules",
