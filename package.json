@@ -1,6 +1,6 @@
 {
   "name": "bfs-path",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "An emulation of Node's path module. Used in BrowserFS.",
   "main": "js/cjs/path.js",
   "module": "js/es6/path.js",
@@ -19,9 +19,7 @@
   },
   "homepage": "https://github.com/jvilk/bfs-path#readme",
   "devDependencies": {
-    "typescript": "~2.7"
-  },
-  "dependencies": {
+    "typescript": "~2.7",
     "@types/node": "^9.4.5"
   }
 }

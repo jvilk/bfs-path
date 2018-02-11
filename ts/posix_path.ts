@@ -181,7 +181,7 @@ export function resolve(...paths: string[]): string {
     var cwd = process.cwd();
     if (resolved !== '') {
       // cwd will never end in a /... unless it's the root.
-      resolved = this.normalize(cwd + (cwd !== '/' ? sep : '') + resolved);
+      resolved = normalize(cwd + (cwd !== '/' ? sep : '') + resolved);
     } else {
       resolved = cwd;
     }
@@ -429,7 +429,7 @@ export const sep: string = '/';
 export const _replaceRegex = new RegExp("//+", 'g');
 
 export function _removeDuplicateSeps(p: string): string {
-  p = p.replace(this._replaceRegex, this.sep);
+  p = p.replace(_replaceRegex, sep);
   return p;
 }
 
